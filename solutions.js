@@ -6,21 +6,28 @@
 
 // write a function named setAlarm with two arguments
 const setAlarm = (employed, vacationing) => {
-    if (employed === true && vacationing === true) {
+// DRY code
+    if (employed === true && vacationing === false){
+        console.log(true);
+    }else {
         console.log(false);
     }
-    else if(employed === false && vacationing === false)
-        {
-            console.log(false);
-        }
-    else if(employed === false && vacationing === true)
-        {
-            console.log(false);
-        }
-    else if(employed === true && vacationing === false)
-        {
-            console.log(true);
-        }
+
+    // if (employed === true && vacationing === true) {
+    //     console.log(false);
+    // }
+    // else if(employed === false && vacationing === false)
+    //     {
+    //         console.log(false);
+    //     }
+    // else if(employed === false && vacationing === true)
+    //     {
+    //         console.log(false);
+    //     }
+    // else if(employed === true && vacationing === false)
+    //     {
+    //         console.log(true);
+    //     }
 }
 setAlarm(false, true);
 
