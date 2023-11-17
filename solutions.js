@@ -12,7 +12,6 @@ const setAlarm = (employed, vacationing) => {
     }else {
         console.log(false);
     }
-
     // if (employed === true && vacationing === true) {
     //     console.log(false);
     // }
@@ -74,15 +73,36 @@ oddNumberCount(7);
 // oddNumberCount(16) // => returns 8 (because [1, 3, 5, 7, 9, 11, 13, 15] are the positive odd numbers below 7)
 
 /////////////////////////////////////////////////////////////
-//  Disemvoweling Trolls
+// Disemvoweling Trolls
 // remove all vowels from the Troll's comments
 // function trollsBeGone with 1 arguement (string)
 // return a new string with all vowels removed from original string
 
+// created an array of vowels
 const vowels = ["a", "e", "i", "o", "u", "y"]
-const trollsBeGone = (trollsComment) => {
 
+// created function to replace vowels to blanks
+const trollsBeGone = (trollsComment) => {
+    // created new variable to print updated string
+    let updatedTrollsComment
+    for (i = 0; i < vowels.length; i++){
+        updatedTrollsComment = trollsComment.replace(vowels[i], "")
+    }
+        console.log(updatedTrollsComment)
 }
+        
+    
+trollsBeGone("you suck");
+
+
+/*
+testing out replace() method
+let phrase = "hello world"
+let censoredPhrase = phrase.replace("h", " ")
+console.log(censoredPhrase)
+*/
+
+
 
 
 // Example expected outputs
