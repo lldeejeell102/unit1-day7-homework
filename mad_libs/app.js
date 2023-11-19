@@ -1,12 +1,7 @@
 // testing connection
 console.log("hello world")
 
-/*
-for (let item in words) {
-    const answer = prompt (`please input ${item}`)
-    words(item) = answer};
-makes items tick along the object
-*/
+// empty object
 let words = {
     number: " ",
     adjective: " ",
@@ -14,19 +9,24 @@ let words = {
     adverb: " ",
     anotherAdjective: " "
 }
+
+// loop that prompts user for each entry needed
+// then assigns them to the correct object & element
 const startMadLib = () => {
-    for (let item in words) {
-        const answer = prompt(`Please input ${item}`);
-        words[item] = answer
+    for (let word in words) {
+        const answer = prompt(`Please input ${word}`);
+        words[word] = answer
     };
     console.log(words)
     completedMadLibs();
 }
 
+// prints out completed Mad Libs
 const completedMadLibs = () => {
     alert(`Once upon a time a group of ${words.number} General Assembly graduates got together and made a startup called ${words.adjective} Technologies. Their goal was to create smart ${words.pluralNoun}. They approached the challenge ${words.adverb} which ultimately lead them to ${words.anotherAdjective} fame.`)
 };
 startMadLib()
+
 
 
 // function startMadLib () {
