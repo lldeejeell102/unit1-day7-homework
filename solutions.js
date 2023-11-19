@@ -80,23 +80,32 @@ oddNumberCount(7);
 
 // created an array of vowels
 const vowels = ["a", "e", "i", "o", "u", "y"]
-
 // created function to replace vowels to blanks
-// let trollBeGone;
-// vowels.forEach(v => {
-//     if()
-// })
+// let replacedPhrase = ""
+// function trollBeGone (comment){
+//     for (i = 0; i < comment.length; i++){
 
-// use .foreach.replace
+//     }
+// }
+const trollsBeGone = (comment) => {
+        let replacedPhrase = comment.replaceAll(/aeiou/g, '')
+        console.log(replacedPhrase)
+}
+trollsBeGone('This website is for losers LOL')
+//function that takes apart the argument and if it's one of the array then replace it a space
+
+//     let newPhrase = comment.replace(vowels,"")
+//     console.log(newPhrase)
+// }
 
 
 
-/*
-testing out replace() method
-let phrase = "hello world"
-let censoredPhrase = phrase.replace("h", " ")
-console.log(censoredPhrase)
-*/
+
+//testing out replaceAll() method
+// let phrase = "hello world"
+// let censoredPhrase = phrase.replaceAll("o", "")
+// console.log(censoredPhrase)
+
 
 
 
