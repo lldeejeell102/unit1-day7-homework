@@ -3,11 +3,11 @@ console.log("hello world")
 
 // empty object
 let words = {
-    number: " ",
-    adjective: " ",
-    pluralNoun: " ",
-    adverb: " ",
-    anotherAdjective: " "
+    // number: " ",
+    // adjective: " ",
+    // pluralNoun: " ",
+    // adverb: " ",
+    // anotherAdjective: " "
 }
 
 // loop that prompts user for each entry needed
@@ -30,13 +30,8 @@ startMadLib()
 
 
 // function startMadLib () {
-//     let number = prompt(`Give me a number`)
-//     if (Number.isInteger(response) === true){
-//         words.number = number
+//         words.number = prompt(`Give me a number`)
 //         madLibAdjective()
-//     }
-//         alert(`that's not a number, try again`)
-//         startMadLib()
 // }
 
 // function madLibAdjective () {

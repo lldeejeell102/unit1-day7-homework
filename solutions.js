@@ -79,7 +79,7 @@ oddNumberCount(7);
 // return a new string with all vowels removed from original string
 
 // created an array of vowels
-const vowels = ["a", "e", "i", "o", "u", "y"]
+// const vowels = ["a", "e", "i", "o", "u", "y"]
 // created function to replace vowels to blanks
 // let replacedPhrase = ""
 // function trollBeGone (comment){
@@ -88,9 +88,9 @@ const vowels = ["a", "e", "i", "o", "u", "y"]
 //     }
 // }
 const trollsBeGone = (comment) => {
-        let replacedPhrase = comment.replaceAll(/aeiou/g, '')
+        let replacedPhrase = comment.replaceAll(/[aeiouAEIOU]/g, '')
         console.log(replacedPhrase)
-}
+    }
 trollsBeGone('This website is for losers LOL')
 //function that takes apart the argument and if it's one of the array then replace it a space
 
