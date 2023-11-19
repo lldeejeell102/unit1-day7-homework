@@ -82,17 +82,13 @@ oddNumberCount(7);
 const vowels = ["a", "e", "i", "o", "u", "y"]
 
 // created function to replace vowels to blanks
-const trollsBeGone = (trollsComment) => {
-    // created new variable to print updated string
-    let updatedTrollsComment
-    for (i = 0; i < vowels.length; i++){
-        updatedTrollsComment = trollsComment.replace(vowels[i], "")
-    }
-        console.log(updatedTrollsComment)
-}
-        
-    
-trollsBeGone("you suck");
+// let trollBeGone;
+// vowels.forEach(v => {
+//     if()
+// })
+
+// use .foreach.replace
+
 
 
 /*
@@ -107,3 +103,39 @@ console.log(censoredPhrase)
 
 // Example expected outputs
 // trollsBeGone("This website is for losers LOL") // => returns "Ths wbst s fr lsrs LL"
+
+
+/////////////////////////////////////////////////////////////
+// Bank Account Summary
+
+// make an Object named bankInfo
+// list all keys (savings, checking, moneyMarket, creditCard)
+const bankInfo = {
+    savings: 100,
+    checking: 25,
+    moneyMarket: 150, 
+    creditCard: -75
+}
+
+// write a function called bankAccountSummary
+// accepts your bankInfo objects as argument
+let bankTotal = 0
+function bankAccountSummary (savings, checking, moneyMarket, creditCard) {
+    // calculate total of your bank accounts and returns it
+    // save bankAccountSummary total into a variable called bankTotal
+    bankTotal = bankInfo.savings + bankInfo.checking + bankInfo.moneyMarket + bankInfo.creditCard
+    console.log(bankTotal)
+}
+bankAccountSummary()
+
+function inTheRed (bankTotal) {
+    if (bankTotal > 0){
+        console.log(false)
+    }else {
+        console.log(true)
+    }
+}
+inTheRed(bankTotal)
+
+
+/////////////////////////////////////////////////////////////
